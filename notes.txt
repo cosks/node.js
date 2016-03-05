@@ -1,0 +1,11 @@
+NPM - Node Packege Manager
+
+Instaling a package:
+npm install {Package name e.g. package.json}
+
+The package contains the config settings and other dependencies.
+
+1st comand to use is:
+npm init
+
+https://www.npmjs.com/ contains all of the possible packages you might want to use
