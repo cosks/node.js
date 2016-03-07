@@ -9,3 +9,9 @@ The package contains the config settings and other dependencies.
 npm init
 
 https://www.npmjs.com/ contains all of the possible packages you might want to use
+
+types of Twitter API commands:
+
+1) Get() -> search by # or location or User
+2) Post() -> tweeting!
+3) Stream() -> continuous / socket connection (e.g. every time your handle is mentioned, do something)
