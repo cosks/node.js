@@ -23,3 +23,22 @@ function gotData(err, data, response) {
     console.log(tweets[i].text);
   }
 }
+
+//  tweet 'hello world!'
+var tweet = {
+  status: '#helloWworld !!'
+}
+
+function tweeted(err, data, responce){
+  if(err){
+    console.log("Error"+err);
+  }
+  else{
+    //console.log(data);
+    console.log("Tweet posted!");
+  }
+}
+T.post('statuses/update', tweet, tweeted)
+//T.post('statuses/update', { status: 'hello world!' }, function(err, data, response) {
+//  console.log(data)
+//})
