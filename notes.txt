@@ -19,3 +19,12 @@ every time an event takes place.
 
 
 Twitter API:
+
+
+*/ Processing:
+
+  Command line processing:
+    $processing-java
+    $node bot.js
+    // you can have node executing processing, and processing execute node
+*/
