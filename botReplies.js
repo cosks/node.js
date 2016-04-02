@@ -18,9 +18,19 @@ function tweetEvent(eventMsg){
   console.log("A tweet event happened");
   //the bollow is to figure out the eventMsg
   //the fs module allows to read and write files :
-  var fs = require('fs');
-  var json = JSON.stringify(eventMsg, null, 2);
-  fs.writeFile("twet.json", json)
+  // var fs = require('fs');
+  // var json = JSON.stringify(eventMsg, null, 2);
+  // fs.writeFile("twet.json", json);
+
+  var replyTo = eventMsg.in_reply_to_screen_name;
+  var msgText = eventMsg.text;
+  var msgFrom = eventMsg.user.screen_name;
+  console.log(replyTo + ' ' + msgFrom);
+
+  if (replyTo == 'cos_ks') {
+    var newTweet = '@' + msgFrom + ' thanks for the tweet :)';
+    tweetIt(newTweet);
+  }
 }
 
 function tweetIt(txt){
