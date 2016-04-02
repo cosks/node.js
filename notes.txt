@@ -16,9 +16,9 @@ types of Twitter API commands:
 2) Post() -> tweeting!
 3) Stream() -> continuous / socket connection (e.g. every time your handle is mentioned, do something)
 every time an event takes place.
-
-
-Twitter API:
+    - "user" -> any events tired to a specific user
+    - "public"-> every time someone tweets with some hashtag
+    - "site"
 
 
 */ Processing:
